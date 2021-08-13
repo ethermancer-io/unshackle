@@ -1,0 +1,18 @@
+{
+  "manifest_version": 2,
+  "name": "Unshackle",
+  "version": "0.1.0",
+  "description": "Earn money for browsing the internet effectively",
+  "icons": {
+    "48": "icons/unshackle-48.png"
+  },
+  "permissions": ["*://localhost:7007/*", "webNavigation", "webRequest", "storage"],
+  "browser_action": {
+    "default_icon": "icons/unshackle-32.png",
+    "default_title": "Unshackle Dashboard",
+    "default_popup": "popup/dashboard.html"
+  },
+  "background": {
+    "scripts": ["background.js"]
+  }
+}
